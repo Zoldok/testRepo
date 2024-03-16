@@ -21,10 +21,5 @@
             <path d="M39.0625 39.0625L10.9375 10.9375" stroke-width="3" stroke-linecap="round"
                 stroke-linejoin="round" />
         </g>
-        <defs>
-            <clipPath id="clip0_1_1753">
-                <rect />
-            </clipPath>
-        </defs>
     </symbol>
 </svg>
