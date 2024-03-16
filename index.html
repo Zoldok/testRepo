@@ -1,0 +1,2435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="main">
+      <butotn class="button__open" id="open_pop_up"> Поиск </butotn>
+    </section>
+
+    <section class="pop-up" id="pop_up">
+      <div class="pop-up__container">
+        <div class="pop-up_close" id="pop_up_close">
+          <svg class="icon-close">
+            <use xlink:href="./img/sprite.svg#close-modal"></use>
+          </svg>
+        </div>
+
+        <div class="pop-up__body" id="pop_up_body">
+          <div class="pop-up_close-mobile pop-up_close" id="pop_up_close-mobile">
+            <svg class="icon-close-mobile">
+              <use href="./img/sprite.svg#close-modal"></use>
+            </svg>
+          </div>
+          <p class="pop-up__title">Специализации</p>
+          <input
+            class="pop-up__input text"
+            type="text"
+            id="searchInput"
+            placeholder="Например, Водитель"
+          />
+
+          <div class="pop-up__tablet">
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Автомобильный бизнес</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Автомойщик</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item2" />Автослесарь,
+                  автомеханик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                  />Автомойщик</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item3" />Менеджер по
+                  продажам, менеджер по работе с клиентами</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Административный персонал</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Администратор</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                  />Делопроизводитель, архивариус</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item3" />Курьер</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Менеджер/руководитель АХО</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item2" />Оператор ПК,
+                  оператор базы данных</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                  />Офис-менеджер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Переводчик</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item2" />Секретарь,
+                  помощник руководителя, ассистент</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Безопасность</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Военнослужащий</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                  />Охранник</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                  />Полицейский</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Специалист по информационной безопасности</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item3" />Специалист
+                  службы безопасности</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Высший и средний менеджмент</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Генеральный директор, исполнительный директор (CEO)</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item2" />Директор по
+                  информационным технологиям (CIO)</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item3" />Директор по
+                  маркетингу и PR (CMO)</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Директор по персоналу (HRD)</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item2" />Директор
+                  юридического департамента (CLO)</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item3" />Коммерческий
+                  директор (CCO)</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Начальник производства</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item2" />Операционный
+                  директор (COO)</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Руководитель отдела аналитики</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item2" />Руководитель
+                  отдела логистики</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item3" />Руководитель
+                  отдела маркетинга и рекламы</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Руководитель отдела персонала</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item2" />Руководитель
+                  филиала</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item3" />Технический
+                  директор (CTO)</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Финансовый директор (CFO)</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Добыча сырья</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Геодезист</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item2" />Геолог</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                  />Лаборант</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Машинист</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item2" />Научный
+                  специалист, исследователь</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item3" />Начальник
+                  смены, мастер участка</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Технолог</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Домашний, обслуживающий персонал</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Администратор</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                  />Водитель</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item3" />Воспитатель,
+                  няня</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Дворник</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item2" />Курьер</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item3" />Официант,
+                  бармен, бариста</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Охранник</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item2" />Уборщица,
+                  уборщик</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Закупки</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Менеджер по закупкам</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item2" />Специалист по
+                  тендерам</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Информационные технологии</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />BI-аналитик, аналитик данных</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />DevOps-инженер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Аналитик</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Арт-директор, креативный директор</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Бизнес-аналитик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Гейм-дизайнер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Дата-сайентист</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Дизайнер, художник</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Директор по информационным технологиям (CIO)</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Менеджер продукта</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Методолог</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Программист, разработчик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Продуктовый аналитик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Руководитель группы разработки</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Руководитель отдела аналитики</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Руководитель проектов</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Сетевой инженер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Системный администратор</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Системный аналитик</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Системный инженер</label
+                >
+                <label
+                  ><input type="radio" name="item" value="item2" />Специалист по
+                  информационной безопасности</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Специалист технической поддержки</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Тестировщик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Технический директор (CTO)</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Искусство, развлечения, массмедиа</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Арт-директор, креативный директор</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Артист, актер, аниматор</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Видеооператор, видеомонтажер</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Гейм-дизайнер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Дизайнер, художник</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Журналист, корреспондент</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Журналист, корреспондент</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Продюсер</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Режиссер, сценарист</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Фотограф, ретушер</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Маркетинг, реклама, PR</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Event-менеджер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />PR-менеджер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />SMM-менеджер, контент-менеджер</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Аналитик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Арт-директор, креативный директор</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Дизайнер, художник</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Директор по маркетингу и PR (CMO)</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Копирайтер, редактор, корректор</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Маркетолог-аналитик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Менеджер по маркетингу, интернет-маркетолог</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Менеджер по продажам, менеджер по работе с клиентами</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Менеджер по работе с партнерами</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Промоутер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Руководитель отдела маркетинга и рекламы</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Медицина, фармацевтика</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Администратор</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Администратор</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Ветеринарный врач</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Врач</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Главный врач, заведующий отделением</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Заведующий аптекой</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Лаборант</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Медицинская сестра, медицинский брат</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Медицинский представитель</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Научный специалист, исследователь</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Научный специалист, исследователь</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Фармацевт-провизор</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Наука, образование</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Бизнес-тренер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Воспитатель, няня</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Лаборант</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Методист</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Научный специалист, исследователь</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Психолог</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Учитель, преподаватель, педагог</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Продажи, обслуживание клиентов</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Агент по недвижимости</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Аналитик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Брокер</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Кассир-операционист</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Коммерческий директор (CCO)</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Координатор отдела продаж</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Кредитный специалист</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Менеджер по продажам, менеджер по работе с клиентами</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Менеджер по работе с партнерами</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Оператор call-центра, специалист контактного центра</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Продавец-консультант, продавец-кассир</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Руководитель отдела клиентского обслуживания</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Руководитель отдела продаж</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Руководитель филиала</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Специалист по сертификации</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Специалист технической поддержки</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Страховой агент</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Торговый представитель</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Производство, сервисное обслуживание</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Инженер ПНР</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Инженер по качеству</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Инженер по охране труда и технике безопасности,
+                  инженер-эколог</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Инженер по эксплуатации</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Инженер-конструктор, инженер-проектировщик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Инженер-электроник, инженер-электронщик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Инженер-энергетик, инженер-электрик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Контролёр ОТК</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Лаборант</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Мастер по ремонту оборудования, техники</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Машинист</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Метролог</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Механик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Научный специалист, исследователь</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Начальник производства</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Начальник смены, мастер участка</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Оператор производственной линии</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Оператор станков с ЧПУ</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Сварщик</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Сервисный инженер, инженер-механик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Слесарь, сантехник</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Специалист по сертификации</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Технолог</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Токарь, фрезеровщик, шлифовщик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Швея, портной, закройщик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Электромонтажник</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Рабочий персонал</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Автослесарь, автомеханик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Водитель</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Грузчик</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Кладовщик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Маляр, штукатур</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Машинист</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Механик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Монтажник</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Оператор производственной линии</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Оператор станков с ЧПУ</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Разнорабочий</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Сварщик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Сервисный инженер, инженер-механик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Слесарь, сантехник</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Токарь, фрезеровщик, шлифовщик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Упаковщик, комплектовщик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Электромонтажник</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Розничная торговля</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Администратор магазина, администратор торгового зала</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Директор магазина, директор сети магазинов</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Мерчандайзер</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Продавец-консультант, продавец-кассир</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Промоутер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Супервайзер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Товаровед</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Сельское хозяйство</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Агроном</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Ветеринарный врач</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Зоотехник</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Машинист</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Сервисный инженер, инженер-механик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Технолог</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">
+                  Спортивные клубы, фитнес, салоны красоты
+                </p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Администратор</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Косметолог</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Массажист</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Мастер ногтевого сервиса</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Менеджер по продажам, менеджер по работе с клиентами</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Парикмахер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Фитнес-тренер, инструктор тренажерного зала</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Стратегия, инвестиции, консалтинг</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Аналитик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Бизнес-аналитик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Менеджер/консультант по стратегии</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Руководитель проектов</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Финансовый аналитик, инвестиционный аналитик</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Страхование</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Андеррайтер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Оценщик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Страховой агент</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Строительство, недвижимость</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Агент по недвижимости</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Архитектор</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Брокер</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Геодезист</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Главный инженер проекта</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Дизайнер, художник</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Инженер ПТО, инженер-сметчик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Инженер по охране труда и технике безопасности,
+                  инженер-эколог</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Инженер по эксплуатации</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Инженер-конструктор, инженер-проектировщик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Маляр, штукатур</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Машинист</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Монтажник</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Прораб, мастер СМР</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Разнорабочий</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Руководитель проектов</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Руководитель строительного проекта</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Сварщик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Слесарь, сантехник</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Электромонтажник</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Транспорт, логистика, перевозки</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Бортпроводник</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Водитель</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Грузчик</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Диспетчер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Кладовщик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Курьер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Машинист</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Менеджер по логистике, менеджер по ВЭД</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Начальник склада</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Руководитель отдела логистики</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Упаковщик, комплектовщик</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Туризм, гостиницы, рестораны</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Администратор</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Менеджер по туризму</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Менеджер ресторана</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Менеджер/руководитель АХО</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Официант, бармен, бариста</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Повар, пекарь, кондитер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Уборщица, уборщик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Хостес</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Управление персоналом, тренинги</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Бизнес-тренер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Директор по персоналу (HRD)</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Менеджер по компенсациям и льготам</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Менеджер по персоналу</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Руководитель отдела персонала</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Специалист по кадрам</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Специалист по подбору персонала</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Финансы, бухгалтерия</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Аудитор</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Брокер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Бухгалтер</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Казначей</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Комплаенс-менеджер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Кредитный специалист</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Методолог</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Специалист по взысканию задолженности</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Финансовый аналитик, инвестиционный аналитик</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Финансовый директор (CFO)</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Финансовый контролер</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Финансовый менеджер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Экономист</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Юристы</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Директор юридического департамента (CLO)</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item2"
+                    class="text"
+                  />Комплаенс-менеджер</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item3"
+                    class="text"
+                  />Юрисконсульт</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Юрист</label
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__line">
+                <svg class="icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+                <p class="dropbtn text">Другое</p>
+              </div>
+              <div class="dropdown-content">
+                <label
+                  ><input
+                    type="radio"
+                    name="item"
+                    value="item1"
+                    class="text"
+                  />Другое</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/search.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/close.js"></script>
+  </body>
+</html>
