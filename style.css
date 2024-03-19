@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
 .icon {
   stroke: #edeff5;
   width: 15px;
@@ -67,6 +75,7 @@
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 25px;
+  color: #2f353d;
 }
 
 .pop-up__container {
@@ -99,6 +108,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  color: #2f353d;
 }
 
 .dropdown-content label {
@@ -120,17 +130,14 @@
 }
 
 .pop-up__tablet {
-  width: 566px;
+  width: 600px;
   height: 365px;
   display: flex;
   flex-direction: column;
   overflow: overlay;
-  overflow: overlay;
   transition: overflow 0.5s;
-}
-
-.pop-up__tablet.no-scroll {
-  overflow: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .dropdown {
@@ -145,7 +152,8 @@
 .dropdown__line {
   display: flex;
   align-items: center;
-  padding: 13.5px 15px 13.5px 15px;
+  padding: 11.5px 15px 11.5px 15px;
+  border-radius: 5px;
 }
 
 .dropdown__line.active {
@@ -161,11 +169,16 @@
   padding: 15px 35px 15px 35px;
 }
 
+.dropdown-content__label {
+  display: flex;
+}
+
 .dropdown-content label {
   display: none;
 }
 .dropdown-content label {
-  display: block;
+  display: flex;
+  /* align-items: center; */
 }
 
 .dropdown-content label:not(:last-child) {
@@ -174,6 +187,8 @@
 
 .dropdown-content input[type='radio'] {
   margin-right: 10px;
+  width: 15px;
+  height: 15px;
 }
 
 .pop-up_close {
@@ -183,14 +198,39 @@
 }
 
 .icon-close-mobile {
-  /* display: none; */
   width: 50px;
   height: 50px;
   stroke: black;
 }
 
-.pop-up_close-mobile{
+.pop-up_close-mobile {
   display: none;
+}
+
+.button-block {
+  margin-top: 40px;
+  display: flex;
+  gap: 25px;
+}
+
+.button-block__text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 11px 20px 11px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.button-block__text_save {
+  background-color: #5898ff;
+  color: #ffffff;
+}
+
+.button-block__text_cancell {
+  background-color: #edeff5;
+  color: #2f353d;
 }
 
 @media (max-width: 840px) {
@@ -201,36 +241,29 @@
     top: 18px;
   }
 
-
   .pop-up_close-mobile {
     display: block;
   }
 
-  .icon-close-mobile{
+  .icon-close-mobile {
     width: 36px;
     height: 36px;
   }
 }
 
-
 @media (max-width: 767px) {
   .pop-up__tablet {
-    width: auto;
+    width: 100%;
   }
 
   .pop-up__input {
     width: 100%;
   }
 
-  .pop-up__body {
-    width: auto;
-  }
   .pop-up__container {
     padding-left: 10px;
     padding-right: 10px;
   }
-
-
 }
 
 @media (max-width: 370px) {

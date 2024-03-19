@@ -1,12 +1,12 @@
-let timeout;
-const popUpTablet = document.querySelector('.pop-up__tablet');
+let timeout
+const popUpTablet = document.querySelector('.pop-up__tablet')
 
-popUpTablet.addEventListener('scroll', function() {
-    clearTimeout(timeout);
-    
-    popUpTablet.style.scrollbarColor = 'initial';
+popUpTablet.addEventListener('scroll', function () {
+  clearTimeout(timeout)
 
-    timeout = setTimeout(function() {
-        popUpTablet.style.scrollbarColor = 'transparent transparent'; 
-    }, 1500); 
-});
+  popUpTablet.style.scrollbarWidth = 'auto'
+
+  timeout = setTimeout(function () {
+    popUpTablet.style.scrollbarWidth = 'none'
+  }, 1000)
+})
