@@ -177,6 +177,10 @@ button {
 .dropdown-content label {
   display: flex;
 }
+
+.dropdown-content__label{
+cursor: pointer;
+}
 .dropdown-content__label input[type='radio'] {
   position: absolute;
   width: 1px;
