@@ -16,31 +16,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   buttons.forEach(function (button, index) {
     button.addEventListener('click', function () {
-      contents.forEach(function (content, contentIndex) {
-        if (index === contentIndex) {
-          content.style.display =
-            content.style.display === 'none' ? 'block' : 'none';
+      const content = button.querySelector('.dropdown-content');
 
-          line.forEach(function (item) {
-            item.classList.remove('active');
-          });
-          icons.forEach(function (icon) {
-            icon.parentNode.classList.remove('active');
-          });
-          if (content.style.display === 'block') {
-            line[index].classList.add('active');
-            icons[index].setAttribute('xlink:href', './img/sprite.svg#open');
-            icons[index].parentNode.classList.add('active');
-          } else {
-            icons[index].setAttribute('xlink:href', './img/sprite.svg#close');
-            icons[index].parentNode.classList.remove('active');
-          }
-        } else {
-          content.style.display = 'none';
-          icons[contentIndex].setAttribute('xlink:href', './img/sprite.svg#close');
-          icons[contentIndex].parentNode.classList.remove('active');
-        }
-      })
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'flex';
+        line[index].classList.add('active');
+        icons[index].setAttribute('xlink:href', './img/sprite.svg#open');
+        icons[index].parentNode.classList.add('active');
+      } else {
+        content.style.display = 'none';
+        line[index].classList.remove('active');
+        icons[index].setAttribute('xlink:href', './img/sprite.svg#close');
+        icons[index].parentNode.classList.remove('active');
+      }
     })
   })
 
@@ -49,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (filter === '') {
       buttons.forEach(function (button) {
-        button.style.display = 'block'
+        button.style.display = 'flex'
       })
       return
     }
@@ -71,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
           item.classList.remove('show')
         }
       })
-      button.style.display = hasVisibleItems ? 'block' : 'none'
+      button.style.display = hasVisibleItems ? 'flex' : 'none'
     })
   })
 })
